@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mind_tags",
+  "info": {
+    "singularName": "mind-tag",
+    "pluralName": "mind-tags",
+    "displayName": "mindTag"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "minds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::mind.mind",
+      "inversedBy": "tags"
+    }
+  }
+}

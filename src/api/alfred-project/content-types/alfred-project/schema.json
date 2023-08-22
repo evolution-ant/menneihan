@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alfred_projects",
+  "info": {
+    "singularName": "alfred-project",
+    "pluralName": "alfred-projects",
+    "displayName": "Alfred[项目]配置",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

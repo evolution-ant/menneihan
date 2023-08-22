@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_types",
+  "info": {
+    "singularName": "site-type",
+    "pluralName": "site-types",
+    "displayName": "网站分类"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

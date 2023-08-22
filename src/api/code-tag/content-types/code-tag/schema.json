@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_tags",
+  "info": {
+    "singularName": "code-tag",
+    "pluralName": "code-tags",
+    "displayName": "代码标签",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "codes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::code.code",
+      "mappedBy": "tags"
+    }
+  }
+}

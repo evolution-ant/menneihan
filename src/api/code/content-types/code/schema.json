@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "codes",
+  "info": {
+    "singularName": "code",
+    "pluralName": "codes",
+    "displayName": "代码",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "remark": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::code-tag.code-tag",
+      "inversedBy": "codes"
+    },
+    "isFavorited": {
+      "type": "boolean",
+      "default": false
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "txt",
+        "jsx",
+        "js",
+        "css",
+        "python",
+        "sql",
+        "bash",
+        "php",
+        "go",
+        "java"
+      ],
+      "enumName": "language",
+      "default": "txt",
+      "required": true
+    }
+  }
+}

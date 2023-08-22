@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alfred_terminals",
+  "info": {
+    "singularName": "alfred-terminal",
+    "pluralName": "alfred-terminals",
+    "displayName": "Alfred[命令]配置"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "command": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

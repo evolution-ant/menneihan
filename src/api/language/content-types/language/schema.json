@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "languages",
+  "info": {
+    "singularName": "language",
+    "pluralName": "languages",
+    "displayName": "language"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "js",
+        "python",
+        "php"
+      ]
+    }
+  }
+}

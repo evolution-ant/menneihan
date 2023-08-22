@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_tags",
+  "info": {
+    "singularName": "article-tag",
+    "pluralName": "article-tags",
+    "displayName": "文章标签"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "tags"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "joke_topics",
+  "info": {
+    "singularName": "joke-topic",
+    "pluralName": "joke-topics",
+    "displayName": "句子话题",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "jokes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::joke.joke",
+      "mappedBy": "topics"
+    }
+  }
+}

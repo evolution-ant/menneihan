@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "joke_tags",
+  "info": {
+    "singularName": "joke-tag",
+    "pluralName": "joke-tags",
+    "displayName": "句子标签",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "jokes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::joke.joke",
+      "mappedBy": "tags"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "men",
+  "info": {
+    "singularName": "man",
+    "pluralName": "men",
+    "displayName": "man",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "isContracting": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

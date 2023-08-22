@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "minds",
+  "info": {
+    "singularName": "mind",
+    "pluralName": "minds",
+    "displayName": "mind"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "full_content": {
+      "type": "text"
+    },
+    "content": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::mind-tag.mind-tag",
+      "mappedBy": "minds"
+    }
+  }
+}

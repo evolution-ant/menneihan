@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jokes",
+  "info": {
+    "singularName": "joke",
+    "pluralName": "jokes",
+    "displayName": "句子",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "minLength": 1
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::joke-topic.joke-topic",
+      "inversedBy": "jokes"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::joke-tag.joke-tag",
+      "inversedBy": "jokes"
+    },
+    "remark": {
+      "type": "string"
+    },
+    "isFavorited": {
+      "type": "boolean",
+      "default": false
+    },
+    "isMine": {
+      "type": "boolean",
+      "default": false
+    },
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::joke-type.joke-type",
+      "inversedBy": "jokes"
+    }
+  }
+}

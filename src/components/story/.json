@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_story_",
+  "info": {
+    "displayName": "手机号",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "phone": {
+      "type": "string"
+    }
+  }
+}

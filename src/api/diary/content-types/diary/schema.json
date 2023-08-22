@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diaries",
+  "info": {
+    "singularName": "diary",
+    "pluralName": "diaries",
+    "displayName": "diary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pictures": {
+      "type": "json"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "family",
+        "travel",
+        "study",
+        "friend",
+        "hobby",
+        "sports",
+        "work"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "isHistory": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "happenedAt": {
+      "type": "datetime"
+    }
+  }
+}

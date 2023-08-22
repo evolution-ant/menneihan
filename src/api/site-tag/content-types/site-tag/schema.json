@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_tags",
+  "info": {
+    "singularName": "site-tag",
+    "pluralName": "site-tags",
+    "displayName": "网站标签"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "sites": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::site.site",
+      "mappedBy": "tags"
+    }
+  }
+}

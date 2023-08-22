@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "workflow_projects",
+  "info": {
+    "singularName": "workflow-project",
+    "pluralName": "workflow-projects",
+    "displayName": "Alfred[配置]",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alfred-project.alfred-project"
+    },
+    "commands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alfred-terminal.alfred-terminal"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sports",
+  "info": {
+    "singularName": "sport",
+    "pluralName": "sports",
+    "displayName": "Sport",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "weight": {
+      "type": "float",
+      "required": false,
+      "unique": false
+    },
+    "steps": {
+      "type": "integer"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
