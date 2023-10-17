@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cis",
+  "info": {
+    "singularName": "ci",
+    "pluralName": "cis",
+    "displayName": "词",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "word": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "shortPinYin": {
+      "type": "string"
+    },
+    "firstWord": {
+      "type": "string"
+    },
+    "firstPinYin": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "lastPinYin": {
+      "type": "string"
+    },
+    "lastWord": {
+      "type": "string"
+    },
+    "lastYunMu": {
+      "type": "string"
+    },
+    "firstPinYinNum": {
+      "type": "string"
+    },
+    "lastPinYinNum": {
+      "type": "string"
+    },
+    "lastYunMuNum": {
+      "type": "string"
+    },
+    "lastBodyAndTail": {
+      "type": "string"
+    }
+  }
+}
